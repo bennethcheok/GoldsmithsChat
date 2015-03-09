@@ -8,11 +8,17 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
 
+    <uses-permission
+        android:name = "android.permission.INTERNET"
+    />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+
+
         <activity
             android:name="com.hmkcode.android.sign.MainActivity"
             android:label="@string/app_name"
@@ -23,6 +29,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name="com.hmkcode.android.sign.SignUpActivity"
             android:label="@string/app_name"
@@ -33,6 +40,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
         <activity
             android:name="com.hmkcode.android.sign.SignInActivity"
             android:label="@string/app_name"
@@ -43,6 +51,18 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="com.hmkcode.android.sign.ChatActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.ChatActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

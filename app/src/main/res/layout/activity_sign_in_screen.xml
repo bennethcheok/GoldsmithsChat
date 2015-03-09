@@ -7,21 +7,21 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity" 
-    
+    tools:context=".MainActivity"
+
     android:background="#ffffff">
 
-    <LinearLayout 
+    <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:padding="10dp"
         >
-        
-        
-        <EditText 
-                android:id="@+id/etUserName"
+
+
+        <EditText
+            android:id="@+id/etUserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/edittext_top_bg"
@@ -29,8 +29,8 @@
             android:hint="Email"
             android:textColorHint="#cccccc"
             android:drawableLeft="@drawable/email"/>
-        <EditText 
-                android:id="@+id/etPass"
+        <EditText
+            android:id="@+id/etPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/edittext_bottom_bg"
@@ -40,7 +40,7 @@
             android:textColorHint="#cccccc"
             android:password="true"
             android:drawableLeft="@drawable/password"/>
-        <Button 
+        <Button
             android:id="@+id/btnSingIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
             android:text="Sign In"
             style="@style/DefaultButtonText"
             android:background="@drawable/button_default_bg"
-           />
-        </LinearLayout>
+            />
+    </LinearLayout>
 
 </RelativeLayout>
