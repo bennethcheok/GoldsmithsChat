@@ -24,4 +24,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:21.0.3'
     compile 'com.google.android.gms:play-services:6.5.87'
     compile files('src/external_libs/pircbot.jar')
+    compile files('src/external_libs/commons-lang-2.6.jar')
+    compile files('src/external_libs/jsch-0.1.51.jar')
+    compile files('src/external_libs/mysql_connector_java_5.1.34_bin.jar')
 }

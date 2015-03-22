@@ -1,7 +1,5 @@
 package com.example.faisal.goldsmithschat;
 
-import com.hmkcode.android.sign.ChatActivity;
-
 import org.jibble.pircbot.PircBot;
 
 public class MyBot extends PircBot

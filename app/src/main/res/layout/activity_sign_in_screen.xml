@@ -21,7 +21,7 @@
 
 
         <EditText
-            android:id="@+id/etUserName"
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/edittext_top_bg"
@@ -30,7 +30,7 @@
             android:textColorHint="#cccccc"
             android:drawableLeft="@drawable/email"/>
         <EditText
-            android:id="@+id/etPass"
+            android:id="@+id/pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/edittext_bottom_bg"
@@ -41,7 +41,7 @@
             android:password="true"
             android:drawableLeft="@drawable/password"/>
         <Button
-            android:id="@+id/btnSingIn"
+            android:id="@+id/btnSignIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
