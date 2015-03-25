@@ -23,16 +23,16 @@ public class MyBot extends PircBot
 
         //System.out.println("A message have been received.");
 
-        if (message.equalsIgnoreCase("time")) {
+        /*if (message.equalsIgnoreCase("time")) {
             String time = new java.util.Date().toString();
             sendMessage(channel, sender + ": The time is now " + time);
-        }
+        }*/
 
-        ChatActivity.runOnUi(
+        SubChat.runOnUi(
                 new Runnable() {
                     @Override
                     public void run() {
-                        ChatActivity.serverText.append(sender + ": " + message + "\n");
+                        SubChat.serverText.append(sender + ": " + message + "\n");
                     }
                 });
     }

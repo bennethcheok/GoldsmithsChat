@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubChat">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="10"
+        android:background="#FCCBA1"
+        >
+
+        <!--<ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:id="@+id/Logo"
+            android:src="@drawable/icon"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Computer Science"
+            android:textColor="#76322A"
+            android:id="@+id/ChatSection"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:text=""
+            android:textSize="25sp"
+            android:id="@+id/ServerText"
+            android:background="#ffffff"
+            android:maxLines="15"
+            android:scrollbars="vertical"
+            android:gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#76322A"
+            android:fadeScrollbars="false"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="7"
+            android:layout_alignParentBottom="true"
+            >
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:id="@+id/UserText"
+                android:background="#FFFFFF"
+                android:layout_weight="5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#76322A"
+                />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="Send"
+                android:id="@+id/sendButton"
+                android:layout_weight="2"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

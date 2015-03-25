@@ -9,7 +9,13 @@
     <string name="action_sign_in_short">LogIn</string>
     <string name="action_sign_in">Sign Up</string>
 
-
+    <string-array name = "nav_drawer_items">
+        <item>Common</item>
+        <item>Computing</item>
+        <item>Art</item>
+        <item>Design</item>
+        <item>History</item>
+    </string-array>
 
      <style name="DefaultButtonText">
        <item name="android:layout_width">fill_parent</item>
@@ -24,4 +30,6 @@
         <item name="android:shadowDy">1</item>
         <item name="android:shadowRadius">1</item>
     </style>
+
+    <string name="desc_list_item_icon">Item Icon</string>
 </resources>
