@@ -53,4 +53,4 @@ To install on an Android device:
 
 <br>
 
-- There is a known bug that happens occasionally that causes the program to not function as expected after signing in. If said bug occured, please shut the app down completely in Settings>Device>Apps and relaunch it, or restart the app in your emulator.
+- There is a known bug that happens occasionally that causes the program to not function as expected after signing in. If said bug occurred, please shut the app down completely in Settings>Device>Apps and relaunch it, or restart the app in your emulator.
