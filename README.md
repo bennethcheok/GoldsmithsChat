@@ -21,30 +21,30 @@ Alternative Links (requires adjustments to dependencies in build.gradle file dep
 
 <br>
 
-Copy the jar files into the following location in your local GoldsmithsChat directory.
-GoldsmithsChat\app\src\external_libs
+<br>Copy the jar files into the following location in your local GoldsmithsChat directory.
+<br>GoldsmithsChat\app\src\external_libs
 (Create the folder 'external_libs' if it does not exists)
 
 <br><br><br><br>
 
 To run the APK directly on an Android device or app emulator:
-The link below includes a download link for the APK file.
-Link: http://www.mediafire.com/download/hi9ai5r5cal63dd/app-debug.zip
-Tested to be runnable on BlueStacks and Android device with Version 4.4.4.
+<br>The link below includes a download link for the APK file.
+<br>Link: http://www.mediafire.com/download/hi9ai5r5cal63dd/app-debug.zip
+<br>Tested to be runnable on BlueStacks and Android device with Version 4.4.4.
 
 <br>
 
 To install on BlueStacks:
-Link to BlueStacks: http://www.bluestacks.com/
-Link to instructions on installing app in BlueStacks(Method 2 of 2, part 3 and onwards): http://www.wikihow.com/Install-Android-Apps-on-Bluestacks
+<br>Link to BlueStacks: http://www.bluestacks.com/
+<br>Link to instructions on installing app in BlueStacks(Method 2 of 2, part 3 and onwards): <br>http://www.wikihow.com/Install-Android-Apps-on-Bluestacks
 
 <br>
 
 To install on an Android device:
-1. Copy the APK to the internal storage.
-2. Navigate to the location of the APK using an Android file manager app from Google play store (eg. File Commander).
-3. Install it using Package Installer.
-4. Grant the app the permission to use system network during installation.
+<br>1. Copy the APK to the internal storage.
+<br>2. Navigate to the location of the APK using an Android file manager app from Google play store (eg. File Commander).
+<br>3. Install it using Package Installer.
+<br>4. Grant the app the permission to use system network during installation.
 
 <br><br><br><br>
 
