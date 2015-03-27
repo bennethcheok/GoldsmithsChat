@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -29,11 +30,41 @@ public class SignInActivity extends Activity implements View.OnClickListener
         passwordF = (EditText) findViewById(R.id.pass);
 
         button.setOnClickListener(this);
+
+        emailF.setOnKeyListener(new View.OnKeyListener() {
+                               @Override
+                               public boolean onKey(View v, int keyCode, KeyEvent event) {
+                                   if((event.getAction() == event.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER))
+                                   {
+                                       passwordF.requestFocus();
+                                       return true;
+                                   }
+
+                                   return false;
+                               }
+                           }
+        );
+
+        passwordF.setOnKeyListener(new View.OnKeyListener() {
+                                @Override
+                                public boolean onKey(View v, int keyCode, KeyEvent event) {
+                                    if((event.getAction() == event.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER))
+                                    {
+                                        button.performClick();
+                                        return true;
+                                    }
+
+                                    return false;
+                                }
+                            }
+        );
     }
 
     @Override
     public void onClick(View v)
     {
+        v.setEnabled(false);
+
         switch(v.getId())
         {
             case R.id.btnSignIn:
@@ -81,5 +112,7 @@ public class SignInActivity extends Activity implements View.OnClickListener
 
             System.out.println("User is not registered.");
         }
+
+        v.setEnabled(true);
     }
 }

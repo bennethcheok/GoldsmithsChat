@@ -52,7 +52,8 @@
             android:layout_marginTop="20dp"
             android:textColor="#76322A"
             android:fadeScrollbars="false"
-            />
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -71,7 +72,10 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:textColor="#76322A"
-                />
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
 
             <Button
                 style="?android:attr/buttonStyleSmall"

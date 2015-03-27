@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -31,14 +32,48 @@ public class SignUpActivity extends Activity implements View.OnClickListener
         passwordF = (EditText) findViewById(R.id.pass);
 
         button.setOnClickListener(this);
-        /*
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v)
-            {
 
-            }
-        });
-        };*/
+        nicknameF.setOnKeyListener(new View.OnKeyListener() {
+                                    @Override
+                                    public boolean onKey(View v, int keyCode, KeyEvent event) {
+                                        if((event.getAction() == event.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER))
+                                        {
+                                            emailF.requestFocus();
+                                            return true;
+                                        }
+
+                                        return false;
+                                    }
+                                }
+        );
+
+        emailF.setOnKeyListener(new View.OnKeyListener() {
+                                    @Override
+                                    public boolean onKey(View v, int keyCode, KeyEvent event) {
+                                        if((event.getAction() == event.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER))
+                                        {
+                                            passwordF.requestFocus();
+                                            return true;
+                                        }
+
+                                        return false;
+                                    }
+                                }
+        );
+
+        passwordF.setOnKeyListener(new View.OnKeyListener() {
+                                    @Override
+                                    public boolean onKey(View v, int keyCode, KeyEvent event) {
+                                        if((event.getAction() == event.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER))
+                                        {
+                                            button.performClick();
+                                            return true;
+                                        }
+
+                                        return false;
+                                    }
+                                }
+        );
     }
 
     @Override
@@ -197,5 +232,7 @@ public class SignUpActivity extends Activity implements View.OnClickListener
 
         AlertDialog alert = builder.create();
         alert.show();
+
+        v.setEnabled(true);
     }
 }

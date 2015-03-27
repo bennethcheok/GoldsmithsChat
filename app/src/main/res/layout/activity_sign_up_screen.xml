@@ -28,7 +28,7 @@
             android:padding="10dp"
             android:hint="Nickname"
             android:textColorHint="#bbbbbb"
-            android:drawableLeft="@drawable/email"/>
+            android:drawableLeft="@drawable/user"/>
         <EditText
             android:id="@+id/email"
             android:layout_width="match_parent"
@@ -38,7 +38,7 @@
             android:padding="10dp"
             android:hint="Email"
             android:textColorHint="#bbbbbb"
-            android:drawableLeft="@drawable/user"/>
+            android:drawableLeft="@drawable/email"/>
         <EditText
             android:id="@+id/pass"
             android:layout_width="match_parent"

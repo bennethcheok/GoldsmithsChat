@@ -6,12 +6,15 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.StrictMode;
 import android.text.method.ScrollingMovementMethod;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.mysql.jdbc.StringUtils;
 
 public class SubChat extends Fragment implements View.OnClickListener
 {
@@ -49,6 +52,21 @@ public class SubChat extends Fragment implements View.OnClickListener
         button.setOnClickListener(this);
 
         ChatActivity.bot.joinChannel("#" + getArguments().getString("ChatSection"));
+        text.requestFocus();
+
+        text.setOnKeyListener(new View.OnKeyListener() {
+                                    @Override
+                                    public boolean onKey(View v, int keyCode, KeyEvent event) {
+                                        if((event.getAction() == event.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER))
+                                        {
+                                            button.performClick();
+                                            return true;
+                                        }
+
+                                        return false;
+                                    }
+                                }
+        );
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -76,11 +94,15 @@ public class SubChat extends Fragment implements View.OnClickListener
             case R.id.sendButton:
                 String word = text.getText().toString();
 
-                if(!word.equals(""))
+                if(!StringUtils.isEmptyOrWhitespaceOnly(word))
                 {
                     System.out.println(word);
                     ChatActivity.bot.sendMessage("#" + getArguments().getString("ChatSection"), word);
                     serverText.append(ChatActivity.bot.getName() + ": " + word + "\n");
+                    text.setText("");
+                }
+                else
+                {
                     text.setText("");
                 }
             break;
