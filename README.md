@@ -6,18 +6,18 @@ External libraries are required to run the code.
 <br>
 
 Links:
-http://www.mediafire.com/download/xanr7i56a7m66ea/pircbot.jar
-http://www.mediafire.com/download/yv83pwylaz38mhe/mysql_connector_java_5.1.34_bin.jar
-http://www.mediafire.com/download/r4kfve03pxbrpp8/jsch-0.1.51.jar
-http://www.mediafire.com/download/r9i87zbx3dd048k/commons-lang-2.6.jar
+<br>http://www.mediafire.com/download/xanr7i56a7m66ea/pircbot.jar
+<br>http://www.mediafire.com/download/yv83pwylaz38mhe/mysql_connector_java_5.1.34_bin.jar
+<br>http://www.mediafire.com/download/r4kfve03pxbrpp8/jsch-0.1.51.jar
+<br>http://www.mediafire.com/download/r9i87zbx3dd048k/commons-lang-2.6.jar
 
 <br>
 
 Alternative Links (requires adjustments to dependencies in build.gradle file depending on the version downloaded):
-http://www.jibble.org/files/pircbot-1.5.0.zip
-http://dev.mysql.com/downloads/connector/j/
-http://www.jcraft.com/jsch/
-http://mirrors.ukfast.co.uk/sites/ftp.apache.org//commons/lang/binaries/commons-lang-2.6-bin.zip
+<br>http://www.jibble.org/files/pircbot-1.5.0.zip
+<br>http://dev.mysql.com/downloads/connector/j/
+<br>http://www.jcraft.com/jsch/
+<br>http://mirrors.ukfast.co.uk/sites/ftp.apache.org//commons/lang/binaries/commons-lang-2.6-bin.zip
 
 <br>
 
